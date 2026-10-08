@@ -1,0 +1,21 @@
+{
+  "name": "learn-mcp",
+  "version": "0.1.0",
+  "description": "Harness-neutral MCP server for graded teaching quizzes (DeepSeek Harness, Claude Code, Codex).",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "learn-mcp": "src/server.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.0.0"
+  }
+}
